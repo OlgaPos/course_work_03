@@ -1,0 +1,6 @@
+/.pytest_cash
+/.bin
+/lib
+/venv
+/.idea
+pyvenv.cfg
