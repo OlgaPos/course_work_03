@@ -10,7 +10,7 @@ def test_get_data(test_url):
     assert get_data("https://no.url.com")[0] is None
     # Проверим, что ссылка идёт на правильный адрес (используем мой существующий адрес).
     assert get_data("https://github.com/OlgaPos")[0] is None
-    # Проверим, что возвращает ошибку на несуществующий адрес.
+    # Проверим, что возвращает ошибку на существующий сайт, но неправильный адрес.
     assert get_data("https://github.com/OlgaPos/3")[0] is None
 
 
